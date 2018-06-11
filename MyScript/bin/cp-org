@@ -1,0 +1,4 @@
+#!/bin/bash
+today=$(date +%Y-%m-%d)
+cd ~/org
+cp time-table.org TODO-table/$today-TODOS.org

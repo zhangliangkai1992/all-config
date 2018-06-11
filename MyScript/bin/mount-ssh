@@ -1,0 +1,2 @@
+#!/bin/bash
+sshfs zlk@211.87.227.$1:/home/zlk ~/lab-dir

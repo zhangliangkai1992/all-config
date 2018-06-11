@@ -1,0 +1,5 @@
+#!/bin/bash
+now=$(date)
+ipinfo=$(ifconfig|grep 211.87.227|awk '{print $2}')
+echo $now
+echo $ipinfo

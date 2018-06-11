@@ -1,0 +1,15 @@
+#!/bin/bash
+#rm -rf /dev/shm/.ip-info
+while [ ! -f /dev/shm/.ip-info ]
+do
+	curl ipinfo.io 2>/dev/null 1 > /dev/shm/.ip-info &
+	pid=$!;
+	echo TRYING;
+	sleep 3;
+	count=$(ps -e|grep $pid|wc -l);
+	if [ "$count" -ne 0 ];
+	then
+		kill -9 $pid;
+	fi
+done
+echo DONE;

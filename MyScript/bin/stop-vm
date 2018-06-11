@@ -1,0 +1,4 @@
+#!/bin/bash
+set -x
+VBoxManage controlvm "$1" poweroff
+#VBoxManage startvm $1 --type headless

@@ -1,0 +1,4 @@
+#!/bin/bash
+echo localhost slots=$1>tmp-host
+mpiexec --hostfile tmp-host -n $1 $2
+rm -rf tmp-host

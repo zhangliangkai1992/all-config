@@ -1,0 +1,5 @@
+#!/bin/bash
+for input in $@
+do
+	printf "0x%x\n" $input
+done

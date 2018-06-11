@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+VBoxManage startvm "$1" --type headless

@@ -1,0 +1,5 @@
+#!/bin/bash
+for input in $@
+do
+	printf "%d\n" $input
+done

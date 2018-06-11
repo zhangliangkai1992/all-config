@@ -1,0 +1,2 @@
+#!/bin/bash
+sshfs zlk@s3.sdu-hpcl.org:/home/users/zlk ~/remote-dir

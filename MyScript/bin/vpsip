@@ -1,0 +1,3 @@
+#!/bin/bash
+echo $VPSIP|xclip -selection clipboard
+echo $VPSIP

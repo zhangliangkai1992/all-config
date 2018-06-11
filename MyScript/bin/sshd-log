@@ -1,0 +1,24 @@
+#!/bin/bash
+sshdfile="/dev/shm/.sshd-log-info"
+journalctl -u sshd.service --since today >$sshdfile
+failedCount=$(cat $sshdfile|grep Fail|wc -l)
+acceptCount=$(cat $sshdfile|grep Accept|wc -l)
+lastFailedEntry=$(cat $sshdfile|grep Fail|tail -1)
+lastAcceptEntry=$(cat $sshdfile|grep Accept|tail -1)
+
+echo SSH Failed
+echo Failed Count = $failedCount
+lastFailedTime=$(echo $lastFailedEntry|awk '{print $3}')
+if [ "$(echo $lastFailedEntry|grep 'root')" = "" ];
+then
+	lastFailedIP=$(echo $lastFailedEntry|awk '{print $13}')
+else
+	lastFailedIP=$(echo $lastFailedEntry|awk '{print $11}')
+fi
+echo Time: $lastFailedTime IP: $lastFailedIP
+
+echo SSH Accepted
+echo Accept Count = $acceptCount
+lastAcceptTime=$(echo $lastAcceptEntry|awk '{print $3}')
+lastAcceptIP=$(echo $lastAcceptEntry|awk '{print $11}')
+echo Time: $lastAcceptTime IP: $lastAcceptIP

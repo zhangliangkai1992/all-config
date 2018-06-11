@@ -1,0 +1,4 @@
+#!/bin/bash
+docker start mitsuba-dev
+docker attach mitsuba-dev
+docker stop mitsuba-dev

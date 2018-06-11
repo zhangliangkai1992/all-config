@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo sslocal -c /root/ss-config.json -d stop

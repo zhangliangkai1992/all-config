@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo create_ap --stop wlp3s0

@@ -1,0 +1,4 @@
+#!/bin/bash
+cd
+tar cvzf note.tgz org/
+mv note.tgz ~/Documents

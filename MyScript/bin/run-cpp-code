@@ -1,0 +1,15 @@
+#!/bin/bash
+targetCpp=.test.cpp
+output=/dev/shm/.output
+echo '#include <iostream>'>$targetCpp
+echo 'using namespace std;'>>$targetCpp
+echo 'int main()'>>$targetCpp
+echo '{'>>$targetCpp
+cat $1>>$targetCpp
+echo 'return 0;'>>$targetCpp
+echo '}'>>$targetCpp
+g++ -o $output -g -Wall $targetCpp
+echo $?
+echo Compile finished!!!
+$output
+rm -rf $output $targetCpp
