@@ -1,0 +1,13 @@
+* git study
+** global config
+   $ git config --global user.name zlk
+   $ git config --global user.email zhangliangkai.wh@gmail.com
+   $ git config --global color.ui auto
+   These operation will produce a ~/.gitconfig file.
+** ssh key
+   $ ssh-keygen -t rsa -C myemail@gmail.com
+** push to github
+   create a project in https://github.com/zhangliangkai1992/
+   get the URL https://github.com/zhangliangkai1992/all-config.git
+   $ git remote add origin https://github.com/zhangliangkai1992/all-config.github
+   $ git push -u origin master
