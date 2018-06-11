@@ -8,6 +8,7 @@ AUR="gtk-theme-arc-git mac-os-lion-cursors macos-icon-theme acroread"
 offonts="wqy-zenhei ttf-inconsolata"
 aurfonts="consolas-font"
 deamon="at cronie"
+mydir="~/Downloads ~/Documents ~/Pictures ~/Desktop ~/Workspace"
 pacman -Syu --noconfirm yaourt
 pacman -S --noconfirm $keyring $zlkDE $tools $entertainments $devel $offonts
 yaourt -S --noconfirm $AUR $aurfonts
