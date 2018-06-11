@@ -11,3 +11,5 @@
    get the URL https://github.com/zhangliangkai1992/all-config.git
    $ git remote add origin https://github.com/zhangliangkai1992/all-config.github
    $ git push -u origin master
+   $ git remote add origin-ssh git@github.com:zhangliangkai1992/all-config.git
+   $ git push -u origin-ssh master  ## no password when use ssh key
