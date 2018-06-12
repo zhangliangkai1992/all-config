@@ -1,7 +1,7 @@
 #!/bin/bash
 keyring="archlinuxcn-keyring"
 zlkDE="sddm awesome xcompmgr transset-df conky xscreensaver pcmanfm notepadqq google-chrome xfce4-terminal"
-tools="sshfs pkgfile mlocate net-tools lshw scrot xorg-xrandr wget git shadowsocks screenfetch lxappearance feh fcitx-sogoupinyin dosfstools ntfs-3g fcitx-configtool"
+tools="git-lfs sshfs pkgfile mlocate net-tools lshw scrot xorg-xrandr wget git shadowsocks screenfetch lxappearance feh fcitx-sogoupinyin dosfstools ntfs-3g fcitx-configtool"
 entertainments="ktorrent netease-cloud-music smplayer"
 devel="gdb emacs-git docker"
 AUR="gtk-theme-arc-git mac-os-lion-cursors macos-icon-theme acroread"
